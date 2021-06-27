@@ -1,7 +1,11 @@
-import React from 'react';
+import React from "react";
+import Tweets from "./Tweets";
 
 const App = () => (
-  <h1>Welcome to Kanye</h1>
-)
+  <div>
+    <span className='greatest'>The "greatest" voice of his generation</span>
+    <Tweets />
+  </div>
+);
 
 export default App;

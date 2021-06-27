@@ -15,6 +15,8 @@ app.use(cors());
 //=====================
 //       Routes
 //=====================
+
+// get request to API
 app.get('/tweets', (req, res) => {
   axios({
     method: 'get',
