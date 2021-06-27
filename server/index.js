@@ -12,6 +12,22 @@ app.use(express.json()); // => req.body
 app.use(express.static(path.join(__dirname, "..", "dist")));
 app.use(cors());
 
+//=====================
+//       Routes
+//=====================
+app.get('/tweets', (req, res) => {
+  axios({
+    method: 'get',
+    url: 'https://api.kanye.rest',
+  })
+  .then((response) => {
+    res.status(200).send(response.data);
+  })
+  .catch((err) => {
+    res.status(404).send('Error with get request');
+  });
+});
+
 //=============================================
 //=============================================
 
