@@ -71,6 +71,7 @@ header {
   transform: translate(-50%, -50%);
   border-radius: 40px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .tweetButton:hover {
@@ -97,6 +98,7 @@ header {
   transform: translate(-50%, -50%);
   border-radius: 40px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .overItButton:hover {
